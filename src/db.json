@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Ali Valiyev",
+      "age": 25,
+      "job": "Frontend Dasturchi",
+      "comments": "Vite juda tez ishlaydi, localhost:5173 da sinab ko'rdim."
+    },
+    {
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "Dilnoza Akbarova",
+      "age": 24,
+      "job": "UI/UX Dizayner",
+      "comments": "Tailwind bilan tez va chiroyli dizayn yasash mumkin."
+    },
+    {
+      "id": "5",
+      "name": "Jasur Toshmatov",
+      "age": 30,
+      "job": "Backend Dasturchi",
+      "comments": "Fetch yoki axios bilan backend ga so'rov yuborish kerak."
+    },
+    {
+      "id": "6",
+      "name": "Madina Usmonova",
+      "age": 21,
+      "job": "Junior Dasturchi",
+      "comments": "Ma'lumotlarni brauzerda saqlash uchun localStorage ishlatiladi."
+    },
+    {
+      "id": "7",
+      "name": "Shoxrux Nurmatov",
+      "age": 26,
+      "job": "Fullstack Dasturchi",
+      "comments": "React Router DOM yordamida sahifalar o'rtasida harakatlanamiz."
+    },
+    {
+      "id": "8",
+      "name": "Gulnora Saidova",
+      "age": 27,
+      "job": "State Manager",
+      "comments": "Redux yoki Context API bilan global state boshqariladi."
+    },
+    {
+      "id": "9",
+      "name": "Farruh Abdullayev",
+      "age": 29,
+      "job": "DevOps Muhandisi",
+      "comments": "Vercel yoki Netlify ga loyihani joylash oson."
+    },
+    {
+      "id": "10",
+      "name": "Sevinch Erkinova",
+      "age": 23,
+      "job": "Quality Assurance (QA)",
+      "comments": "Console.log va browser devtools bilan xatolarni topish mumkin."
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
