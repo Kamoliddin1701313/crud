@@ -1,25 +1,15 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "Ali Valiyev",
-      "age": 25,
-      "job": "Frontend Dasturchi",
-      "comments": "Vite juda tez ishlaydi, localhost:5173 da sinab ko'rdim."
-    },
-    {
-      "id": "3"
-    },
-    {
       "id": "4",
       "name": "Dilnoza Akbarova",
-      "age": 24,
+      "age": "2433333330",
       "job": "UI/UX Dizayner",
       "comments": "Tailwind bilan tez va chiroyli dizayn yasash mumkin."
     },
     {
       "id": "5",
-      "name": "Jasur Toshmatov",
+      "name": "Jasur Toshmatov rrr",
       "age": 30,
       "job": "Backend Dasturchi",
       "comments": "Fetch yoki axios bilan backend ga so'rov yuborish kerak."

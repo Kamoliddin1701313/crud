@@ -1,9 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Update = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [updateUser, setUpdateUser] = useState({
     name: "",
     age: "",
@@ -24,8 +25,10 @@ const Update = () => {
     e.preventDefault();
 
     axios
-      .put(`http://localhost:3000/users/`)
-      .then((respons) => setUpdateUser(respons?.data))
+      .put(`http://localhost:3000/users/${id}`, updateUser)
+      .then((respons) => {
+        navigate("/");
+      })
       .catch((error) => {
         console.log(error);
       });
