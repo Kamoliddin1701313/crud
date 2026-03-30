@@ -11,9 +11,7 @@ const Update = () => {
     comments: "",
   });
 
-  console.log(id, "Salom Kamoliddin");
-
-  const updateUserBtn = () => {
+  const getUserBtn = () => {
     axios
       .get(`http://localhost:3000/users/` + id)
       .then((respons) => setUpdateUser(respons?.data))
@@ -22,8 +20,19 @@ const Update = () => {
       });
   };
 
+  const edetUser = (e) => {
+    e.preventDefault();
+
+    axios
+      .put(`http://localhost:3000/users/`)
+      .then((respons) => setUpdateUser(respons?.data))
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   useEffect(() => {
-    updateUserBtn();
+    getUserBtn();
   }, []);
 
   console.log(updateUser, "updateUser updateUser updateUser");
@@ -59,7 +68,7 @@ const Update = () => {
           </div>
 
           {/* Form */}
-          <form className="px-6 py-6 space-y-5">
+          <form onSubmit={edetUser} className="px-6 py-6 space-y-5">
             {/* Ism */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -81,6 +90,12 @@ const Update = () => {
                 </span>
               </label>
               <input
+                onChange={(e) =>
+                  setUpdateUser({
+                    ...updateUser,
+                    [e.target.name]: e.target.value,
+                  })
+                }
                 type="text"
                 name="name"
                 value={updateUser.name}
@@ -110,6 +125,12 @@ const Update = () => {
                 </span>
               </label>
               <input
+                onChange={(e) =>
+                  setUpdateUser({
+                    ...updateUser,
+                    [e.target.name]: e.target.value,
+                  })
+                }
                 type="number"
                 name="age"
                 value={updateUser.age}
@@ -139,6 +160,12 @@ const Update = () => {
                 </span>
               </label>
               <input
+                onChange={(e) =>
+                  setUpdateUser({
+                    ...updateUser,
+                    [e.target.name]: e.target.value,
+                  })
+                }
                 type="text"
                 name="job"
                 value={updateUser.job}
@@ -168,6 +195,12 @@ const Update = () => {
                 </span>
               </label>
               <textarea
+                onChange={(e) =>
+                  setUpdateUser({
+                    ...updateUser,
+                    [e.target.name]: e.target.value,
+                  })
+                }
                 name="comments"
                 value={updateUser.comments}
                 rows="4"
